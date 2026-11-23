@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Freetown Traffic Detection and Counting System
 
 A free, open-source computer vision system that detects, tracks and counts road users in Freetown, Sierra Leone from video. Training runs on Google Colab's free GPU; inference runs on a CPU-only laptop (16 GB RAM, no GPU needed).
@@ -161,3 +162,7 @@ Drop any YOLOv8 or YOLO11 `.pt` into `models/` and pick it in the app, or pass `
 ## Licensing
 
 All components are free and open source. No paid APIs or cloud services are required. Ultralytics YOLO is AGPL-3.0, so check its terms before commercial redistribution.
+=======
+# Freetown_Traffic_Counter
+An ai local vehicle detection system for Freetown , trained on local transport data
+>>>>>>> 94d9aa1893085ba030454a0a33b0faf39dedda98
