@@ -1,0 +1,12 @@
+# Python 3.10 or 3.11 recommended. Install with:  pip install -r requirements.txt
+# Ranges below are what this project was written against. Once everything works on your
+# machine, run `pip freeze > requirements.lock.txt` to record exact versions.
+ultralytics>=8.3,<9
+supervision>=0.22,<0.27      # sv.ByteTrack / sv.LineZone; the tracker API changes in later releases
+opencv-python>=4.8,<5
+streamlit>=1.30,<2
+pandas>=2.0,<4
+matplotlib>=3.7,<4
+pyyaml>=6.0,<7
+numpy>=1.24
+imageio-ffmpeg>=0.4          # bundles FFmpeg so annotated videos are browser-playable H.264 with no system install

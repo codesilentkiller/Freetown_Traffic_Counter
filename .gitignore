@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+data/raw_videos/*
+data/frames/*
+data/freetownroad6/*
+data/akujobi/*
+outputs/*
+models/*.pt
+!**/.gitkeep

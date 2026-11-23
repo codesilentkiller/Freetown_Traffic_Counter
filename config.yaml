@@ -1,0 +1,24 @@
+# Inference configuration for scripts/count_traffic.py and the Streamlit app.
+# Every value can be overridden on the command line (see count_traffic.py --help).
+# Paths are relative to the project root; run scripts from there.
+
+model: models/best.pt        # trained weights (any YOLOv8/YOLO11 .pt works)
+
+inference:
+  imgsz: 416                 # use the size the model was trained at
+  conf: 0.35                 # minimum confidence to keep a detection (higher = fewer false alarms)
+  iou: 0.5                   # NMS overlap threshold
+  device: cpu                # keep "cpu"; this project has no GPU code paths
+  vid_stride: 1              # process every Nth frame (2 or 3 = faster on a slow CPU, tracking gets coarser)
+  max_frames: null           # stop after N processed frames (handy for quick tests), null = whole video
+
+line:                        # the counting line
+  orientation: horizontal    # horizontal (vehicles cross going up/down) or vertical (left/right)
+  position: 0.5              # 0.0-1.0: fraction of frame height (horizontal) or width (vertical)
+  flip: false                # swap which crossing direction is called "in" and which "out"
+
+output:
+  dir: outputs               # results go in <dir>/<video name>/
+  save_video: true           # annotated H.264 video
+  save_csv: true             # per-class counts
+  save_json: true            # per-frame detections

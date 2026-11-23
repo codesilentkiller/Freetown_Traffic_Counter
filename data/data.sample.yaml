@@ -1,0 +1,20 @@
+# Sample data.yaml for FreetownRoad-6.
+# scripts/split_by_location.py writes the real one to data/freetownroad6/data.yaml.
+#
+# There is deliberately NO "path:" line. Ultralytics then resolves the folders
+# below relative to this file, so the dataset works unchanged on your laptop and
+# on Colab. (A relative "path:" would be resolved against the Ultralytics
+# datasets folder instead, which is a common source of "images not found" errors.)
+
+train: images/train
+val: images/val
+test: images/test
+
+nc: 6
+names:
+  0: car
+  1: truck
+  2: poda-poda
+  3: keke
+  4: okada
+  5: pedestrian
