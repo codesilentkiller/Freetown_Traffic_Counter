@@ -2,7 +2,7 @@
 # Every value can be overridden on the command line (see count_traffic.py --help).
 # Paths are relative to the project root; run scripts from there.
 
-model: models/best.pt        # trained weights (any YOLOv8/YOLO11 .pt works)
+model: models/keke_openverse.pt        # trained weights (any YOLOv8/YOLO11 .pt works)
 
 inference:
   imgsz: 416                 # use the size the model was trained at

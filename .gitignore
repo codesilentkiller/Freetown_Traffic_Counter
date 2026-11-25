@@ -9,3 +9,29 @@ data/akujobi/*
 outputs/*
 models/*.pt
 !**/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Datasets
+data/combined/
+data/keke_finetune/
+data/rickshaw_pseudo/
+rickshaw_images/
+rickshaw_images.zip
+
+# Model outputs and checkpoints
+outputs/
+runs/
+*.pt
+*.pth
+*.onnx
+*.cache
+
+# Environment and system files
+.env
+.env.*
+.DS_Store
